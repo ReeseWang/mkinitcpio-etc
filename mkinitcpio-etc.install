@@ -1,0 +1,14 @@
+#!/bin/sh
+# vim: set ft=sh ts=4 sw=4 et:
+
+build () {
+    add_binary "/usr/bin/gethostip" "/bin/gethostip"
+
+    add_runscript
+}
+
+help () {
+    cat <<HELPEOF
+This hook mounts a specified NFS path to /etc
+HELPEOF
+}
